@@ -24,4 +24,21 @@ main{padding:34px 0 60px}.section{background:white;border:1px solid var(--line);
 <section class="section"><h2>Resultado e transparência</h2><p>O protótipo foi testado de ponta a ponta: atendimento pelo chat público, coleta e conferência de informações, pedido de autorização e registro automático em uma planilha Google Sheets.</p><p class="muted">Este é um projeto demonstrativo funcional, com dados fictícios de teste. Não representa uma implantação comercial em uma oficina cliente.</p></section>
 <section class="section contact"><div><h2>Vamos conversar?</h2><p class="muted">Interessado em atendimento inteligente ou automações para seu negócio?</p><p><strong>Gabriel Melo</strong> · Sete Lagoas – MG</p></div><a class="btn primary" href="https://api.whatsapp.com/send?phone=5531991538163" target="_blank" rel="noopener">WhatsApp: (31) 99153-8163</a></section>
 </main><footer class="foot wrap">© 2026 Gabriel Melo · Portfólio de Agentes de IA e Automação</footer>
-</body></html>
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://gabgold.app.n8n.cloud/webhook/b176a655-7782-4291-8209-83a93c530594/chat',
+    mode: 'window',
+    defaultLanguage: 'pt-BR',
+    initialMessages: [
+      'Olá! 👋 Seja bem-vindo ao nosso atendimento virtual!',
+      'Como podemos ajudar você hoje? 🚗'
+    ]
+  });
+</script>
+</body>
+</html>
