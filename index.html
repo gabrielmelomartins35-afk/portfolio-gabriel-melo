@@ -76,4 +76,38 @@
   <section id="competencias"><div class="wrap"><div class="section-head"><div class="kicker">03 / Competências</div><h2>Ferramentas e conhecimentos</h2><p>Competências utilizadas nos projetos e desenvolvidas na experiência profissional.</p></div><div class="grid"><article class="card"><h3>Automação</h3><p>Criação e configuração de fluxos de trabalho com n8n.</p></article><article class="card"><h3>Assistentes de IA</h3><p>Protótipos de agentes conversacionais e atendimento automatizado.</p></article><article class="card"><h3>Integração de dados</h3><p>Google Sheets para organizar e registrar solicitações.</p></article><article class="card"><h3>Chatbots</h3><p>Desenvolvimento de fluxos de conversa com Botpress.</p></article><article class="card"><h3>Suporte técnico</h3><p>Formatação de computadores, instalação de programas e remoção de vírus.</p></article><article class="card"><h3>Atendimento</h3><p>Atendimento ao cliente, comunicação, vendas e organização administrativa.</p></article></div></div></section>
 <section id="experiencia"><div class="wrap"><div class="section-head"><div class="kicker">04 / Experiência</div><h2>Minha trajetória profissional</h2><p>Experiências informadas no meu currículo.</p></div><div class="timeline"><article class="card role"><h3>Pássaros e Cia Ltda.</h3><b>Vendedor / Assistente financeiro e administrativo</b><p>Atendimento e vendas, apoio a rotinas financeiras e administrativas.</p></article><article class="card role"><h3>Set Computadores</h3><b>Vendedor / Técnico</b><p>Atendimento e vendas de produtos e serviços de informática, suporte técnico, formatação e instalação de programas.</p></article></div><article class="card" style="margin-top:15px"><h3>Formação</h3><p>Ensino Médio completo.</p></article></div></section>
 <section id="contato"><div class="wrap"><div class="section-head"><div class="kicker">05 / Contato</div><h2>Vamos conversar sobre uma oportunidade ou projeto?</h2><p>Disponível para oportunidades remotas e para conversar sobre protótipos de atendimento inteligente e automação.</p></div><div class="contact"><a class="btn primary" href="https://wa.me/5531991538163" target="_blank" rel="noopener">WhatsApp · (31) 99153-8163</a><a class="btn" href="https://github.com/gabrielmelomartins35-afk" target="_blank" rel="noopener">GitHub</a></div></div></section></main>
-<footer class="footer"><div class="wrap">© 2026 Gabriel Melo · Portfólio de IA e Automação · Sete Lagoas, MG</div></footer></body></html>
+<footer class="footer"><div class="wrap">© 2026 Gabriel Melo · Portfólio de IA e Automação · Sete Lagoas, MG</div></footer>
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+<style>
+:root {
+  --chat--color-primary: #e91e63;
+  --chat--color-primary-shade-50: #d81b60;
+  --chat--color-primary-shade-100: #c2185b;
+}
+</style>
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'https://cottages-bat-ensure-occurs.trycloudflare.com/webhook/757f1461-ad22-41ae-93de-46ab1e4fddcf/chat',
+    mode: 'window',
+    defaultLanguage: 'pt',
+    initialMessages: [
+      'Olá! 👋',
+      'Sou o assistente virtual do Auto Center Central. Como posso ajudar?'
+    ],
+    i18n: {
+      pt: {
+        title: 'Auto Center Central 🚗',
+        subtitle: 'Atendimento virtual',
+        footer: '',
+        getStarted: 'Iniciar conversa',
+        inputPlaceholder: 'Digite sua mensagem...'
+      }
+    }
+  });
+</script>
+</body></html>
